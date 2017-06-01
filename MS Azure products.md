@@ -5,13 +5,13 @@ Họ nghĩ rằng Azure "chỉ là những máy ảo (VM) được dựng
 
 ![](http://robertgreiner.com/uploads/images/2014/AzureServicesOverview.png)
 
-##### IaaS (Infrastructure as a Service): Virtual Machines
+##### 1. IaaS (Infrastructure as a Service): Virtual Machines
 Một máy chủ trên cloud. Bạn có toàn quyền kiểm soát máy chủ này.
 Nếu nhu cầu của bạn là tùy biến nhiều ứng dụng 3rd party và
 chạy nhiều app trên cùng 1 server thì IaaS là lựa chọn phù hợp.
 Dịch vụ này tương tự như VM của DigitalOcean hay Heroku.
 
-##### PaaS (Platform as a Service): Web app
+##### 2. PaaS (Platform as a Service): Web app
 Tương tự như IaaS, MS cung cấp cho bạn 1 VM. Điểm khác biệt là bạn không cần
 maintain VM này mà chỉ cần tập trung vào phát triển phần mềm sau đó deploy
 lên (thông qua Git, TFS, hay Visual Studio...) => ưu thế là No Downtime, No VM management.
@@ -39,11 +39,11 @@ bảo mật server nên nó cần giới hạn cài đặt các ứng du
 trên cùng một máy chủ.
 
 Xem thêm về giơi hạn của PaaS tại [đây](https://github.com/projectkudu/kudu/wiki/Azure-Web-App-sandbox)
-##### SaaS (Software as a Service): Basecamp, SalfForce, Office 365..:
+##### 3. SaaS (Software as a Service): Basecamp, SalfForce, Office 365..:
 Các ứng dụng có sẵn được tạo ra bởi các hãng và host lên Cloud, bạn
 sử dụng bằng cách subscribe.
 
-##### Serverless Computing: Azure Function
+##### 4. Serverless Computing: Azure Function
 Một bậc tiến hóa mới của PaaS, được MS ra mắt cuối năm 2016. Khác với cái tên
 **Serverless**, thực sự vẫn có 1 server, vấn đề là bạn không cần quan tâm đến nó.
 Nghe chả khác gì PaaS, điểm khác bọt là gì?
