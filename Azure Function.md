@@ -10,3 +10,9 @@
 - Install packages:
   - update pip: **python -m pip install -U pip** or **python -m pip install pip==<version>**
   - install desired package: for example: **python -m pip install numpy**
+  - add the following lines to your function:
+  
+  ```Python
+  import sys, os.path
+  sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), 'myvenv/Lib/site-packages')))
+  ```
